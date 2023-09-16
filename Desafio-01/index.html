@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal de Noticias galactica</title>
+    <link rel="stylesheet" href="/styles/card.css" />
+    <!-- Carrega o script "CardNews.js" de forma assíncrona e adia sua execução, para executar depois que executar a DOM -->
+    <script src="/src/components/CardNews.js" defer></script>
+    <script src="/src/components/TituloDinamico.js" defer></script>
+  </head>
+  <body>
+    <div class="app-root">
+    <!-- Tag personalizada <card-news> criada no contexto do CardNews-->
+      <card-news
+        autor="Glauber"
+        title="Darth Vader Contrata"
+        link-url="www.google.com"
+        photo="\assets\dart-vader.jpg"
+        contet="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+      ></card-news>
+
+      <card-news
+        title="Yoda convence republica a utilizar components"
+        link-url="www.google.com/yoda"
+        photo="\assets\yodinha.jpg"
+        contet="Yoda se pronuncia e choca a republica"
+      ></card-news>
+  </body>
+</html>
